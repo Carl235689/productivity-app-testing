@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Before Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⚙️ Work Before Play</h1>
+    
+    <!-- Task Input Section -->
+    <div class="section">
+      <label for="task-input">Enter your work task:</label>
+      <input 
+        type="text" 
+        id="task-input" 
+        placeholder="e.g., Complete project report"
+      >
+      <button id="save-task-btn">Save Task</button>
+    </div>
+    
+    <!-- Current Task Display -->
+    <div class="section">
+      <h3>Current Task:</h3>
+      <p id="current-task" class="task-display">No task set</p>
+    </div>
+    
+    <!-- Task Completion Section -->
+    <div class="section">
+      <button id="done-btn" class="btn-primary">✓ Done!</button>
+      <p id="completion-message" class="message"></p>
+    </div>
+    
+    <!-- Reward Status Section -->
+    <div class="section reward-section" id="reward-section">
+      <h3>Reward Status:</h3>
+      <p id="reward-status" class="status-locked">🔒 Reward Locked</p>
+      <p id="reward-timer" class="timer"></p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

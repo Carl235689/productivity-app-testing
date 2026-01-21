@@ -1,0 +1,210 @@
+/* ========================================
+   STYLE.CSS - Work Before Play Extension
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 450px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Section Styling */
+.section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Input Field */
+#task-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+#task-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#save-task-btn {
+  width: 100%;
+  background-color: #667eea;
+  color: white;
+}
+
+#save-task-btn:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+#save-task-btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #51cf66;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.btn-primary:hover {
+  background-color: #40c057;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(81, 207, 102, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Task Display */
+.task-display {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Messages */
+.message {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  min-height: 20px;
+}
+
+/* Reward Section */
+.reward-section {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  text-align: center;
+}
+
+.reward-section h3 {
+  color: white;
+}
+
+.reward-section.active {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+}
+
+/* Status Indicators */
+.status-locked,
+.status-unlocked {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.status-locked {
+  color: #ff6b6b;
+}
+
+.status-unlocked {
+  color: #51cf66;
+}
+
+.reward-section .status-locked,
+.reward-section .status-unlocked {
+  color: white;
+}
+
+/* Timer Display */
+.timer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.reward-section p {
+  color: white;
+}
+
+/* Completion Message */
+#completion-message {
+  margin: 0;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5568d3;
+}

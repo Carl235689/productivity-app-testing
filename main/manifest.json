@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Work Before Play",
+  "version": "1.0",
+  "description": "Complete your work tasks to unlock reward time on restricted websites",
+  
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.reddit.com/*",
+    "https://www.twitch.tv/*",
+    "https://www.instagram.com/*"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Work Before Play"
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  }
+}
